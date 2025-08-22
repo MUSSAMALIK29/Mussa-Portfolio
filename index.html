@@ -127,6 +127,16 @@
     .sec-title{font-size:clamp(1.6rem,3.2vw,2.4rem); font-weight:900}
     .sec-sub{color:var(--muted); max-width:700px}
 
+    .hero__art img.hero-img {
+  position: relative;
+  z-index: 2; /* make sure it stays on top of circles */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 2px solid rgba(255,255,255,0.1);
+}
+
     /* ====== Cards / Grids ====== */
     .grid{display:grid; gap:22px; grid-template-columns:repeat(12,1fr)}
     .card{
@@ -256,6 +266,7 @@
         <div class="orb"></div>
         <div class="orb2"></div>
         <div class="orb3"></div>
+          <img src="pp.jpeg" alt="Mussa Malik" class="hero-img">
       </div>
     </div>
   </header>
